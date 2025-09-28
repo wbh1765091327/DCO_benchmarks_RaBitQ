@@ -1,0 +1,120 @@
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Metric Type: L2
+cur_element_count = 1000000
+FhtKacRotator is selected
+./bin/hnsw_rabitq_querying: Interrupt
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./data/sift-128-euclidean/sift-128-euclidean_ad_hnsw_perf_result.txt ./bin/hnsw_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_hnsw_7.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 87.97
+	System time (seconds): 0.48
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:30.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 620084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 27
+	Minor (reclaiming a frame) page faults: 229489
+	Voluntary context switches: 303
+	Involuntary context switches: 8337
+	Swaps: 0
+	File system inputs: 553160
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Metric Type: L2
+cur_element_count = 1000000
+FhtKacRotator is selected
+search start >.....
+EF	QPS	Recall	
+5	24478.1	0.7045	
+10	24217.6	0.7045	
+20	18032.3	0.83159	
+40	11877.2	0.91608	
+50	10284	0.93298	
+60	9046.57	0.94486	
+80	7297.39	0.95881	
+90	6674.07	0.96276	
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./data/sift-128-euclidean/sift-128-euclidean_ad_hnsw_perf_result.txt ./bin/hnsw_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_hnsw_7.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 21.64
+	System time (seconds): 0.27
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 382572
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 109681
+	Voluntary context switches: 12
+	Involuntary context switches: 2101
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+0.578014	5
+0.728618	10
+0.853337	20
+0.936481	40
+0.95369	50
+0.964898	60
+0.977244	80
+0.980795	90
+nprobe	QPS	recall
+5	7834.36	0.578014
+10	6030.85	0.728618
+20	4519.89	0.853337
+40	3299.22	0.936481
+50	2987.21	0.95369
+60	2729.87	0.964898
+80	2354.79	0.977244
+90	2216.99	0.980795
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./result/sift-128-euclidean/sift-128-euclidean_ad_ivf_perf_result.txt ./bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_7_test.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 146.13
+	System time (seconds): 0.12
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:26.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 147808
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38054
+	Voluntary context switches: 12
+	Involuntary context switches: 14126
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 56
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

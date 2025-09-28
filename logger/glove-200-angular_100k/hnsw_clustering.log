@@ -1,0 +1,24 @@
+Using L2 metric by default
+Reading File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs readed
+Time for training ivf 0.33220434188842773 secs
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_16.ivecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_16.ivecs wrote
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_16.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_16.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 200D
+Training IVF residual
+IndexIVF: no residual training
+Using L2 metric by default
+Reading File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs readed
+Time for training ivf 0.38155341148376465 secs
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_16.ivecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_16.ivecs wrote
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_16.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_16.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 200D
+Training IVF residual
+IndexIVF: no residual training

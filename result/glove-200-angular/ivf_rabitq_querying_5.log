@@ -1,0 +1,46 @@
+File ./data/glove-200-angular/glove-200-angular_query.fvecs loaded
+Rows 10000 Cols 200
+File ./data/glove-200-angular/glove-200-angular_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+ivf_rabitq_querying: /home/wbh/cppwork/RaBitQ-Library/rabitqlib/index/ivf/ivf.hpp:324: void rabitqlib::ivf::IVF::load(const char*): Assertion `input.is_open()' failed.
+File ./data/glove-200-angular/glove-200-angular_query.fvecs loaded
+Rows 10000 Cols 200
+File ./data/glove-200-angular/glove-200-angular_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe	QPS	recall
+5	3614.31	0.206299
+10	2644.84	0.266824
+20	1839.05	0.357544
+30	1466.1	0.432814
+40	1232.31	0.499561
+50	1067.3	0.553906
+60	945.247	0.600906
+70	850.146	0.640316
+80	774.809	0.675244
+90	713.778	0.70278
+100	661.61	0.729682
+110	617.653	0.753634
+120	579.359	0.775841
+130	543.26	0.796337
+140	523.378	0.813843
+150	489.285	0.829822
+160	466.047	0.845076
+170	444.108	0.858253
+180	430.248	0.869964
+190	398.054	0.88233
+200	380.411	0.892916
+240	323.511	0.922988
+280	285.412	0.939462
+320	256.51	0.949447
+360	233.705	0.954767
+400	216.055	0.957431
+500	196.431	0.960036
+600	169.632	0.960422
+700	155.769	0.960498
+800	136.505	0.960513
+900	135.83	0.960521

@@ -1,0 +1,267 @@
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+false_pruned_count = 0.0111
+false_pruned_count = 0.0292
+false_pruned_count = 0.056
+false_pruned_count = 0.0734
+false_pruned_count = 0.0849
+false_pruned_count = 0.092
+false_pruned_count = 0.096
+false_pruned_count = 0.0992
+false_pruned_count = 0.1009
+false_pruned_count = 0.1032
+false_pruned_count = 0.0111
+false_pruned_count = 0.0292
+false_pruned_count = 0.056
+false_pruned_count = 0.0734
+false_pruned_count = 0.0849
+false_pruned_count = 0.092
+false_pruned_count = 0.096
+false_pruned_count = 0.0992
+false_pruned_count = 0.1009
+false_pruned_count = 0.1032
+false_pruned_count = 0.0111
+false_pruned_count = 0.0292
+false_pruned_count = 0.056
+false_pruned_count = 0.0734
+false_pruned_count = 0.0849
+false_pruned_count = 0.092
+false_pruned_count = 0.096
+false_pruned_count = 0.0992
+false_pruned_count = 0.1009
+false_pruned_count = 0.1032
+false_pruned_count = 0.0111
+false_pruned_count = 0.0292
+false_pruned_count = 0.056
+false_pruned_count = 0.0734
+false_pruned_count = 0.0849
+false_pruned_count = 0.092
+false_pruned_count = 0.096
+false_pruned_count = 0.0992
+false_pruned_count = 0.1009
+false_pruned_count = 0.1032
+false_pruned_count = 0.0111
+false_pruned_count = 0.0292
+false_pruned_count = 0.056
+false_pruned_count = 0.0734
+false_pruned_count = 0.0849
+false_pruned_count = 0.092
+false_pruned_count = 0.096
+false_pruned_count = 0.0992
+false_pruned_count = 0.1009
+false_pruned_count = 0.1032
+nprobe	QPS	recall
+5	6466.18	0.578157	0
+10	5006.25	0.728926	0
+20	3569.39	0.854035	0
+30	2864.42	0.908746	0
+40	2712.83	0.93811	0
+50	2536.49	0.955791	0
+60	2300.72	0.967468	0
+70	2108.84	0.975221	0
+80	1953.52	0.980515	0
+90	1824.41	0.984362	0
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+The sum of cluster num != total number of points
+Command exited with non-zero status 1
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./result/sift-128-euclidean/sift-128-euclidean_ad_hnsw_perf_result.txt ./bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_9_test.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 0.07
+	System time (seconds): 0.02
+	Percent of CPU this job got: 62%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14284
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4370
+	Voluntary context switches: 14
+	Involuntary context switches: 11
+	Swaps: 0
+	File system inputs: 104
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+The sum of cluster num != total number of points
+Command exited with non-zero status 1
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./result/sift-128-euclidean/sift-128-euclidean_ad_hnsw_perf_result.txt ./bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_9.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 0.05
+	System time (seconds): 0.04
+	Percent of CPU this job got: 67%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14436
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4372
+	Voluntary context switches: 13
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 96
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+The sum of cluster num != total number of points
+Command exited with non-zero status 1
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./result/sift-128-euclidean/sift-128-euclidean_ad_ivf_perf_result.txt ./bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_9_test.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 0.06
+	System time (seconds): 0.03
+	Percent of CPU this job got: 69%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13988
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4368
+	Voluntary context switches: 11
+	Involuntary context switches: 13
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+The sum of cluster num != total number of points
+Command exited with non-zero status 1
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./result/sift-128-euclidean/sift-128-euclidean_ad_ivf_perf_result.txt ./bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_9.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 0.06
+	System time (seconds): 0.02
+	Percent of CPU this job got: 71%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4374
+	Voluntary context switches: 12
+	Involuntary context switches: 9
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+The sum of cluster num != total number of points
+Command exited with non-zero status 1
+	Command being timed: "perf stat -e instructions,cycles,branches,branch-misses -e cache-misses,cache-references -e L1-dcache-load-misses,L1-dcache-loads -e L1-dcache-store-misses,L1-dcache-stores -e LLC-load-misses,LLC-loads -e LLC-store-misses,LLC-stores -e dTLB-load-misses,dTLB-loads -e dTLB-store-misses,dTLB-stores -e page-faults -o ./result/sift-128-euclidean/sift-128-euclidean_ad_ivf_perf_result.txt ./bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_9.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs"
+	User time (seconds): 0.04
+	System time (seconds): 0.04
+	Percent of CPU this job got: 74%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14076
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4365
+	Voluntary context switches: 12
+	Involuntary context switches: 9
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+The sum of cluster num != total number of points
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+The sum of cluster num != total number of points

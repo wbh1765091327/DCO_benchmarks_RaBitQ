@@ -1,0 +1,23 @@
+File ./data/msong-420/msong-420_query.fvecs loaded
+Rows 1000 Cols 420
+File ./data/msong-420/msong-420_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe	QPS	recall
+5	3134.02	0.73609
+10	2617.83	0.87498
+20	2100.32	0.95349
+30	1786.84	0.9757
+40	1563.91	0.98548
+50	1396.08	0.99016
+60	1269.44	0.99268
+70	1161.13	0.99434
+80	1070.19	0.99537
+90	991.782	0.99611
+100	925.356	0.99658
+110	866.65	0.99695
+120	816.587	0.99722

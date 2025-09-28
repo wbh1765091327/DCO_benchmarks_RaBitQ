@@ -1,0 +1,15 @@
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_base.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_centroids_31.fvecs loaded
+Rows 31 Cols 768
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_clusterids_31.ivecs loaded
+Rows 1000 Cols 1
+data loaded
+	N: 1000
+	DIM: 768
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.000583333

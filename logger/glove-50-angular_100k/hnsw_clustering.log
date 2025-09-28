@@ -1,0 +1,12 @@
+Using L2 metric by default
+Reading File - ./data/_glove-50-angular_100k/_glove-50-angular_100k_base.fvecs
+	./data/_glove-50-angular_100k/_glove-50-angular_100k_base.fvecs readed
+Time for training ivf 0.3039381504058838 secs
+Writing File - ./data/_glove-50-angular_100k/_glove-50-angular_100k_clusterids_16.ivecs
+	./data/_glove-50-angular_100k/_glove-50-angular_100k_clusterids_16.ivecs wrote
+Writing File - ./data/_glove-50-angular_100k/_glove-50-angular_100k_centroids_16.fvecs
+	./data/_glove-50-angular_100k/_glove-50-angular_100k_centroids_16.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 50D
+Training IVF residual
+IndexIVF: no residual training

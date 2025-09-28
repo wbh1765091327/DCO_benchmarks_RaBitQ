@@ -1,0 +1,27 @@
+File ./data/_glove-50-angular_100k/_glove-50-angular_100k_query.fvecs loaded
+Rows 1000 Cols 50
+File ./data/_glove-50-angular_100k/_glove-50-angular_100k_groundtruth.ivecs loaded
+Rows 1000 Cols 10
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe	QPS	recall
+10	27785.7	0.8227
+20	17684.2	0.9046
+30	13305	0.9371
+40	10793.8	0.9549
+50	9206.16	0.9656
+60	8044.99	0.9712
+70	7178.29	0.9751
+80	6512.02	0.9777
+90	5971.92	0.9802
+100	5527.87	0.9821
+110	5152.2	0.9828
+120	4844.22	0.9833
+130	4573.22	0.9839
+140	4343.33	0.9841
+150	4139.97	0.9842
+160	3959.86	0.9845
+170	3797.76	0.9845

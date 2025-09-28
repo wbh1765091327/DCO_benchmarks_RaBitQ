@@ -1,0 +1,8 @@
+Using L2 metric by default
+Reading File - ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_base.fvecs
+	./data/instructorxl-arxiv-768/instructorxl-arxiv-768_base.fvecs readed
+Time for training ivf 3.100088357925415 secs
+Training level-1 quantizer
+Training level-1 quantizer on 2253000 vectors in 768D
+Training IVF residual
+IndexIVF: no residual training

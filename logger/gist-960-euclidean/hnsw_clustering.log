@@ -1,0 +1,8 @@
+Using L2 metric by default
+Reading File - ./data/gist-960-euclidean/gist-960-euclidean_base.fvecs
+	./data/gist-960-euclidean/gist-960-euclidean_base.fvecs readed
+Time for training ivf 1.734771728515625 secs
+Training level-1 quantizer
+Training level-1 quantizer on 1000000 vectors in 960D
+Training IVF residual
+IndexIVF: no residual training

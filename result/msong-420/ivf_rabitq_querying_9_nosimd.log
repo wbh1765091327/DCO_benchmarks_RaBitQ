@@ -1,0 +1,21 @@
+File ./data/msong-420/msong-420_query.fvecs not exists
+File ./data/msong-420/msong-420_query.fvecs loaded
+Rows 1000 Cols 420
+File ./data/msong-420/msong-420_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 8s
+File ./data/msong-420/msong-420_query.fvecs loaded
+Rows 1000 Cols 420
+File ./data/msong-420/msong-420_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 8us

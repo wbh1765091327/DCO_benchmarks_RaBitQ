@@ -1,0 +1,70 @@
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_query.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+false_pruned_count = 0.008
+false_pruned_count = 0.021
+false_pruned_count = 0.039
+false_pruned_count = 0.047
+false_pruned_count = 0.055
+false_pruned_count = 0.059
+false_pruned_count = 0.062
+false_pruned_count = 0.066
+false_pruned_count = 0.07
+false_pruned_count = 0.072
+false_pruned_count = 0.008
+false_pruned_count = 0.021
+false_pruned_count = 0.039
+false_pruned_count = 0.047
+false_pruned_count = 0.055
+false_pruned_count = 0.059
+false_pruned_count = 0.062
+false_pruned_count = 0.066
+false_pruned_count = 0.07
+false_pruned_count = 0.072
+false_pruned_count = 0.008
+false_pruned_count = 0.021
+false_pruned_count = 0.039
+false_pruned_count = 0.047
+false_pruned_count = 0.055
+false_pruned_count = 0.059
+false_pruned_count = 0.062
+false_pruned_count = 0.066
+false_pruned_count = 0.07
+false_pruned_count = 0.072
+false_pruned_count = 0.008
+false_pruned_count = 0.021
+false_pruned_count = 0.039
+false_pruned_count = 0.047
+false_pruned_count = 0.055
+false_pruned_count = 0.059
+false_pruned_count = 0.062
+false_pruned_count = 0.066
+false_pruned_count = 0.07
+false_pruned_count = 0.072
+false_pruned_count = 0.008
+false_pruned_count = 0.021
+false_pruned_count = 0.039
+false_pruned_count = 0.047
+false_pruned_count = 0.055
+false_pruned_count = 0.059
+false_pruned_count = 0.062
+false_pruned_count = 0.066
+false_pruned_count = 0.07
+false_pruned_count = 0.072
+nprobe	QPS	recall
+5	1682.32	0.67687	0
+10	1472.13	0.7842	0
+20	1168.37	0.86869	0
+30	986.474	0.90595	0
+40	859.65	0.92745	0
+50	760.979	0.94273	0
+60	686.375	0.95298	0
+70	628.215	0.96007	0
+80	555.512	0.96606	0
+90	488.251	0.97068	0

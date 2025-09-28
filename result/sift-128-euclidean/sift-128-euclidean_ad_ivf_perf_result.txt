@@ -1,0 +1,31 @@
+# started on Wed Aug 20 16:07:26 2025
+
+
+ Performance counter stats for './bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_7_test.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs':
+
+   818,544,558,526      instructions              #    2.07  insn per cycle           (29.41%)
+   395,093,942,724      cycles                                                        (35.29%)
+   109,863,392,975      branches                                                      (41.18%)
+     1,522,237,560      branch-misses             #    1.39% of all branches          (47.06%)
+     3,054,496,555      cache-misses              #   18.957 % of all cache refs      (52.94%)
+    16,112,745,611      cache-references                                              (58.82%)
+    15,845,932,806      L1-dcache-load-misses     #   10.82% of all L1-dcache accesses  (58.82%)13 倍
+   146,443,973,270      L1-dcache-loads                                               (58.82%)12倍
+   <not supported>      L1-dcache-store-misses                                       
+    60,993,784,644      L1-dcache-stores                                              (58.82%)
+       527,177,811      LLC-load-misses           #   26.62% of all LL-cache accesses  (58.83%)
+     1,980,258,725      LLC-loads                                                     (23.53%)
+           644,125      LLC-store-misses                                              (11.76%)
+        36,101,955      LLC-stores                                                    (11.76%)
+       158,291,378      dTLB-load-misses          #    0.11% of all dTLB cache accesses  (17.65%)
+   146,363,716,319      dTLB-loads                                                    (23.53%)
+           994,363      dTLB-store-misses                                             (23.53%)
+    60,971,376,884      dTLB-stores                                                   (23.53%)
+            36,074      page-faults                                                 
+
+     146.274332488 seconds time elapsed
+
+     146.082481000 seconds user
+       0.099938000 seconds sys
+
+

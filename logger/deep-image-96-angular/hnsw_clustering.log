@@ -1,0 +1,8 @@
+Using L2 metric by default
+Reading File - ./data/deep-image-96-angular/deep-image-96-angular_base.fvecs
+	./data/deep-image-96-angular/deep-image-96-angular_base.fvecs readed
+Time for training ivf 1.7614867687225342 secs
+Training level-1 quantizer
+Training level-1 quantizer on 9990000 vectors in 96D
+Training IVF residual
+IndexIVF: no residual training

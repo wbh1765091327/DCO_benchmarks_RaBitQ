@@ -1,0 +1,100 @@
+File ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs loaded
+Rows 1000000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_centroids_2000.fvecs loaded
+Rows 2000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_clusterids_2000.ivecs loaded
+Rows 1000000 Cols 1
+data loaded
+	N: 1000000
+	DIM: 128
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.0463833
+File ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs loaded
+Rows 1000000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_centroids_2000.fvecs loaded
+Rows 2000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_clusterids_2000.ivecs loaded
+Rows 1000000 Cols 1
+data loaded
+	N: 1000000
+	DIM: 128
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 2.86521s
+ivf constructed 
+Indexing time 0.04795
+File ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs loaded
+Rows 1000000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_centroids_2000.fvecs loaded
+Rows 2000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_clusterids_2000.ivecs loaded
+Rows 1000000 Cols 1
+data loaded
+	N: 1000000
+	DIM: 128
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 2.9582s
+ivf constructed 
+Indexing time 0.04945
+File ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs loaded
+Rows 1000000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_centroids_2000.fvecs loaded
+Rows 2000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_clusterids_2000.ivecs loaded
+Rows 1000000 Cols 1
+data loaded
+	N: 1000000
+	DIM: 128
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 2.89537s
+ivf constructed 
+Indexing time 0.0484167
+File ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs loaded
+Rows 1000000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_centroids_2000.fvecs loaded
+Rows 2000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_clusterids_2000.ivecs loaded
+Rows 1000000 Cols 1
+data loaded
+	N: 1000000
+	DIM: 128
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 2.90806s
+ivf constructed 
+Indexing time 0.0486167
+File ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs loaded
+Rows 1000000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_centroids_2000.fvecs loaded
+Rows 2000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_clusterids_2000.ivecs loaded
+Rows 1000000 Cols 1
+data loaded
+	N: 1000000
+	DIM: 128
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 2.92161s
+ivf constructed 
+Indexing time 0.04885

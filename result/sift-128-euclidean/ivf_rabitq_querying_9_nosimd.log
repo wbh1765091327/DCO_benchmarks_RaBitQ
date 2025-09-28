@@ -1,0 +1,21 @@
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs not exists
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 4s
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 6us

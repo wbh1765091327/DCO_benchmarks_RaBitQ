@@ -1,0 +1,13 @@
+Metric Type: L2
+File ./data/msong-420/msong-420_base.fvecs loaded
+Rows 983185 Cols 420
+File ./data/msong-420/msong-420_centroids_16.fvecs loaded
+Rows 16 Cols 420
+File ./data/msong-420/msong-420_clusterids_16.ivecs loaded
+Rows 983185 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 149.764s
+cur_element_count = 983185
+index saved...

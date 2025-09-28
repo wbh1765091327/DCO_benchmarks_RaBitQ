@@ -1,0 +1,31 @@
+# started on Wed Aug 20 14:05:05 2025
+
+
+ Performance counter stats for './bin/ivf_rabitq_querying ./data/sift-128-euclidean/sift-128-euclidean_ivf_9.index ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs':
+
+        18,512,507      instructions              #    1.59  insn per cycle           (21.60%)
+        11,671,446      cycles                                                        (48.68%)
+         3,204,146      branches                                                      (75.78%)
+            28,954      branch-misses             #    0.90% of all branches        
+           171,942      cache-misses              #   43.960 % of all cache refs    
+           391,130      cache-references                                            
+           459,052      L1-dcache-load-misses     #    6.52% of all L1-dcache accesses
+         7,042,760      L1-dcache-loads                                             
+   <not supported>      L1-dcache-store-misses                                      
+         4,250,445      L1-dcache-stores                                            
+            55,035      LLC-load-misses           #    0.00% of all LL-cache accesses
+     <not counted>      LLC-loads                                                     (0.00%)
+     <not counted>      LLC-store-misses                                              (0.00%)
+     <not counted>      LLC-stores                                                    (0.00%)
+     <not counted>      dTLB-load-misses                                              (0.00%)
+     <not counted>      dTLB-loads                                                    (0.00%)
+     <not counted>      dTLB-store-misses                                             (0.00%)
+     <not counted>      dTLB-stores                                                   (0.00%)
+             2,391      page-faults                                                 
+
+       0.027074212 seconds time elapsed
+
+       0.000000000 seconds user
+       0.015386000 seconds sys
+
+

@@ -1,0 +1,77 @@
+File ./data/glove-200-angular/glove-200-angular_query.fvecs loaded
+Rows 10000 Cols 200
+File ./data/glove-200-angular/glove-200-angular_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+File ./data/glove-200-angular/glove-200-angular_query.fvecs loaded
+Rows 10000 Cols 200
+File ./data/glove-200-angular/glove-200-angular_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+false_pruned_count = 0.0079
+false_pruned_count = 0.0146
+false_pruned_count = 0.029
+false_pruned_count = 0.0444
+false_pruned_count = 0.059
+false_pruned_count = 0.0753
+false_pruned_count = 0.0908
+false_pruned_count = 0.1027
+false_pruned_count = 0.1129
+false_pruned_count = 0.1209
+false_pruned_count = 0.0079
+false_pruned_count = 0.0146
+false_pruned_count = 0.029
+false_pruned_count = 0.0444
+false_pruned_count = 0.059
+false_pruned_count = 0.0753
+false_pruned_count = 0.0908
+false_pruned_count = 0.1027
+false_pruned_count = 0.1129
+false_pruned_count = 0.1209
+false_pruned_count = 0.0079
+false_pruned_count = 0.0146
+false_pruned_count = 0.029
+false_pruned_count = 0.0444
+false_pruned_count = 0.059
+false_pruned_count = 0.0753
+false_pruned_count = 0.0908
+false_pruned_count = 0.1027
+false_pruned_count = 0.1129
+false_pruned_count = 0.1209
+false_pruned_count = 0.0079
+false_pruned_count = 0.0146
+false_pruned_count = 0.029
+false_pruned_count = 0.0444
+false_pruned_count = 0.059
+false_pruned_count = 0.0753
+false_pruned_count = 0.0908
+false_pruned_count = 0.1027
+false_pruned_count = 0.1129
+false_pruned_count = 0.1209
+false_pruned_count = 0.0079
+false_pruned_count = 0.0146
+false_pruned_count = 0.029
+false_pruned_count = 0.0444
+false_pruned_count = 0.059
+false_pruned_count = 0.0753
+false_pruned_count = 0.0908
+false_pruned_count = 0.1027
+false_pruned_count = 0.1129
+false_pruned_count = 0.1209
+nprobe	QPS	recall
+5	2667.84	0.206901	0
+10	2006.83	0.268044	0
+20	1390.75	0.36003	0
+30	1086.65	0.436659	0
+40	900.442	0.504817	0
+50	776.764	0.56049	0
+60	686.842	0.608654	0
+70	582.049	0.649325	0
+80	481.297	0.685314	0
+90	427.445	0.713853	0

@@ -1,0 +1,13 @@
+Metric Type: L2
+File ./data/openai-1536-angular/openai-1536-angular_base.fvecs loaded
+Rows 999000 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_centroids_16.fvecs loaded
+Rows 16 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_clusterids_16.ivecs loaded
+Rows 999000 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 527.975s
+cur_element_count = 999000
+index saved...

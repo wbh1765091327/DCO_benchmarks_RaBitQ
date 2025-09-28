@@ -1,0 +1,21 @@
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_query.fvecs not exists
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_query.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 9s
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_query.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 9us

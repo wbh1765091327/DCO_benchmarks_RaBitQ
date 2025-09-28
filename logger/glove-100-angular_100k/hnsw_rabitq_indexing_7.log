@@ -1,0 +1,26 @@
+Metric Type: L2
+File ./data/_glove-100-angular_100k/_glove-100-angular_100k_base.fvecs loaded
+Rows 100000 Cols 100
+File ./data/_glove-100-angular_100k/_glove-100-angular_100k_centroids_16.fvecs loaded
+Rows 16 Cols 100
+File ./data/_glove-100-angular_100k/_glove-100-angular_100k_clusterids_16.ivecs loaded
+Rows 100000 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 3.63827s
+cur_element_count = 100000
+index saved...
+Metric Type: L2
+File ./data/_glove-100-angular_100k/_glove-100-angular_100k_base.fvecs loaded
+Rows 100000 Cols 100
+File ./data/_glove-100-angular_100k/_glove-100-angular_100k_centroids_16.fvecs loaded
+Rows 16 Cols 100
+File ./data/_glove-100-angular_100k/_glove-100-angular_100k_clusterids_16.ivecs loaded
+Rows 100000 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 3.62765s
+cur_element_count = 100000
+index saved...

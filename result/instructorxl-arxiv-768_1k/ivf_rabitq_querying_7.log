@@ -1,0 +1,19 @@
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_query.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_groundtruth.ivecs loaded
+Rows 1000 Cols 10
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe 40 is larger than number of clusters, will use nprobe = num_cluster (31).
+nprobe 40 is larger than number of clusters, will use nprobe = num_cluster (31).
+nprobe 40 is larger than number of clusters, will use nprobe = num_cluster (31).
+nprobe 40 is larger than number of clusters, will use nprobe = num_cluster (31).
+nprobe 40 is larger than number of clusters, will use nprobe = num_cluster (31).
+nprobe	QPS	recall
+10	41129.9	0.9725
+20	33240.5	0.9935
+30	28499	0.9941
+40	28279.1	0.9941

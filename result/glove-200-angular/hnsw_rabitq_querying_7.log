@@ -1,0 +1,38 @@
+File ./data/glove-200-angular/glove-200-angular_query.fvecs loaded
+Rows 10000 Cols 200
+File ./data/glove-200-angular/glove-200-angular_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Cannot open file
+File ./data/glove-200-angular/glove-200-angular_query.fvecs loaded
+Rows 10000 Cols 200
+File ./data/glove-200-angular/glove-200-angular_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Metric Type: L2
+cur_element_count = 1183514
+FhtKacRotator is selected
+search start >.....
+EF	QPS	Recall	
+10	24857.6	0.37429	
+20	17438.9	0.48981	
+40	11507.8	0.59324	
+50	9866.32	0.62192	
+60	8581.56	0.64505	
+80	6794.39	0.67797	
+100	5674.25	0.70123	
+150	3840	0.73855	
+170	3394.51	0.74977	
+190	3029.82	0.75886	
+200	2877.43	0.76247	
+250	2270.53	0.77816	
+300	1888.03	0.78893	
+400	1348.35	0.80451	
+500	1063.29	0.81466	
+600	847.267	0.82218	
+700	709.54	0.82889	
+800	616.918	0.83454	
+1000	469.185	0.8427	
+1500	303.345	0.85658	
+2000	212.145	0.86441	
+2500	162.51	0.86987	
+3000	142.939	0.87385	

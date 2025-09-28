@@ -1,0 +1,13 @@
+Metric Type: L2
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_base.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_centroids_16.fvecs loaded
+Rows 16 Cols 768
+File ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_clusterids_16.ivecs loaded
+Rows 1000 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 0.026917s
+cur_element_count = 1000
+index saved...

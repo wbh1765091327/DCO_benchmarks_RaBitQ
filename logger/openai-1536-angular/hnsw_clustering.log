@@ -1,0 +1,8 @@
+Using L2 metric by default
+Reading File - ./data/openai-1536-angular/openai-1536-angular_base.fvecs
+	./data/openai-1536-angular/openai-1536-angular_base.fvecs readed
+Time for training ivf 2.8239285945892334 secs
+Training level-1 quantizer
+Training level-1 quantizer on 999000 vectors in 1536D
+Training IVF residual
+IndexIVF: no residual training

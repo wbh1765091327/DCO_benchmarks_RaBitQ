@@ -1,0 +1,21 @@
+File ./data/gist-960-euclidean/gist-960-euclidean_query.fvecs not exists
+File ./data/gist-960-euclidean/gist-960-euclidean_query.fvecs loaded
+Rows 1000 Cols 960
+File ./data/gist-960-euclidean/gist-960-euclidean_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 14s
+File ./data/gist-960-euclidean/gist-960-euclidean_query.fvecs loaded
+Rows 1000 Cols 960
+File ./data/gist-960-euclidean/gist-960-euclidean_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 15us

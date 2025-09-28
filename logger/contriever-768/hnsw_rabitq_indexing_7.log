@@ -1,0 +1,13 @@
+Metric Type: L2
+File ./data/contriever-768/contriever-768_base.fvecs loaded
+Rows 990000 Cols 768
+File ./data/contriever-768/contriever-768_centroids_16.fvecs loaded
+Rows 16 Cols 768
+File ./data/contriever-768/contriever-768_clusterids_16.ivecs loaded
+Rows 990000 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 316.858s
+cur_element_count = 990000
+index saved...

@@ -1,0 +1,36 @@
+Using L2 metric by default
+Reading File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_base.fvecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_base.fvecs readed
+Time for training ivf 0.3705141544342041 secs
+Writing File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_clusterids_316.ivecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_clusterids_316.ivecs wrote
+Writing File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_centroids_316.fvecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_centroids_316.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 25D
+Training IVF residual
+IndexIVF: no residual training
+Using L2 metric by default
+Reading File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_base.fvecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_base.fvecs readed
+Time for training ivf 0.34641575813293457 secs
+Writing File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_clusterids_316.ivecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_clusterids_316.ivecs wrote
+Writing File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_centroids_316.fvecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_centroids_316.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 25D
+Training IVF residual
+IndexIVF: no residual training
+Using L2 metric by default
+Reading File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_base.fvecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_base.fvecs readed
+Time for training ivf 0.3815176486968994 secs
+Writing File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_clusterids_316.ivecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_clusterids_316.ivecs wrote
+Writing File - ./data/_glove-25-angular_100k/_glove-25-angular_100k_centroids_316.fvecs
+	./data/_glove-25-angular_100k/_glove-25-angular_100k_centroids_316.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 25D
+Training IVF residual
+IndexIVF: no residual training

@@ -1,0 +1,107 @@
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Cannot open file
+File ./data/sift-128-euclidean/sift-128-euclidean_query.fvecs loaded
+Rows 10000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Metric Type: L2
+cur_element_count = 1000000
+FhtKacRotator is selected
+search start >.....
+false_pruned_count = 0.139
+false_pruned_count = 0.139
+false_pruned_count = 0.139
+false_pruned_count = 0.243
+false_pruned_count = 0.243
+false_pruned_count = 0.243
+false_pruned_count = 0.327
+false_pruned_count = 0.327
+false_pruned_count = 0.327
+false_pruned_count = 0.35
+false_pruned_count = 0.35
+false_pruned_count = 0.35
+false_pruned_count = 0.369
+false_pruned_count = 0.369
+false_pruned_count = 0.369
+false_pruned_count = 0.391
+false_pruned_count = 0.391
+false_pruned_count = 0.391
+false_pruned_count = 0.403
+false_pruned_count = 0.403
+false_pruned_count = 0.403
+false_pruned_count = 0.42
+false_pruned_count = 0.42
+false_pruned_count = 0.42
+false_pruned_count = 0.425
+false_pruned_count = 0.425
+false_pruned_count = 0.425
+false_pruned_count = 0.426
+false_pruned_count = 0.426
+false_pruned_count = 0.426
+false_pruned_count = 0.426
+false_pruned_count = 0.426
+false_pruned_count = 0.426
+false_pruned_count = 0.427
+false_pruned_count = 0.427
+false_pruned_count = 0.427
+false_pruned_count = 0.428
+false_pruned_count = 0.428
+false_pruned_count = 0.428
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+false_pruned_count = 0.431
+EF	QPS	Recall	False_Pruned_Rate
+10	20457.4	0.70794	0.139
+20	12584.7	0.83553	0.243
+40	9955.82	0.92231	0.327
+50	8847.96	0.94111	0.35
+60	7845.85	0.95347	0.369
+80	6302.73	0.968	0.391
+100	5338.59	0.97601	0.403
+150	3836.83	0.98493	0.42
+170	3451.15	0.98678	0.425
+190	3126.91	0.98802	0.426
+200	2986.92	0.98844	0.426
+250	2459.81	0.99002	0.427
+300	2063.71	0.99087	0.428
+400	1580.88	0.9916	0.431
+500	1256.21	0.9919	0.431
+600	1051.75	0.99207	0.431
+700	895.295	0.99224	0.431
+800	777.444	0.99233	0.431
+1000	626.909	0.99243	0.431
+1500	401.225	0.99254	0.431
+2000	305.265	0.99255	0.431
+2500	236.796	0.99256	0.431
+3000	191.852	0.99256	0.431

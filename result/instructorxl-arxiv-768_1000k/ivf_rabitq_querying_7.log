@@ -1,0 +1,30 @@
+File ./data/instructorxl-arxiv-768_1000k/instructorxl-arxiv-768_1000k_query.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768_1000k/instructorxl-arxiv-768_1000k_groundtruth.ivecs loaded
+Rows 1000 Cols 10
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe	QPS	recall
+10	2999.12	0.8964
+20	2044.05	0.9498
+30	1552.69	0.9658
+40	1274.1	0.9754
+50	1072.45	0.98
+60	915.765	0.983
+70	805.66	0.9846
+80	721.044	0.9864
+90	653.524	0.9877
+100	597.715	0.9884
+110	550.505	0.9898
+120	510.22	0.9905
+130	497.459	0.991
+140	436.888	0.9917
+150	409.813	0.9919
+160	386.853	0.9922
+170	390.58	0.9924
+180	346.744	0.9925
+190	330.238	0.9926
+200	314.585	0.9925

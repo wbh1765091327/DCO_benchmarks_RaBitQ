@@ -1,0 +1,101 @@
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_query.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Metric Type: L2
+cur_element_count = 2253000
+FhtKacRotator is selected
+search start >.....
+false_pruned_count = 0.07
+false_pruned_count = 0.07
+false_pruned_count = 0.07
+false_pruned_count = 0.17
+false_pruned_count = 0.17
+false_pruned_count = 0.17
+false_pruned_count = 0.2
+false_pruned_count = 0.2
+false_pruned_count = 0.2
+false_pruned_count = 0.22
+false_pruned_count = 0.22
+false_pruned_count = 0.22
+false_pruned_count = 0.23
+false_pruned_count = 0.23
+false_pruned_count = 0.23
+false_pruned_count = 0.25
+false_pruned_count = 0.25
+false_pruned_count = 0.25
+false_pruned_count = 0.25
+false_pruned_count = 0.25
+false_pruned_count = 0.25
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.26
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+false_pruned_count = 0.27
+EF	QPS	Recall	False_Pruned_Rate
+10	4691.42	0.7414	0.07
+20	3599.28	0.8507	0.17
+40	3983.17	0.9238	0.2
+50	3833.03	0.9382	0.22
+60	3439.04	0.9508	0.23
+80	2825.44	0.9648	0.25
+100	2439.02	0.9719	0.25
+150	1767.86	0.9827	0.26
+170	1628.29	0.9844	0.26
+190	1490.61	0.9862	0.26
+200	1425.35	0.9873	0.26
+250	1187.83	0.99	0.26
+300	1011.88	0.9906	0.27
+400	778.678	0.9929	0.27
+500	636.175	0.9937	0.27
+600	537.754	0.9941	0.27
+700	468.15	0.9941	0.27
+800	412.676	0.9943	0.27
+1000	332.758	0.9946	0.27
+1500	225.142	0.9952	0.27
+2000	170.159	0.9952	0.27
+2500	135.068	0.9953	0.27
+3000	111.118	0.9956	0.27

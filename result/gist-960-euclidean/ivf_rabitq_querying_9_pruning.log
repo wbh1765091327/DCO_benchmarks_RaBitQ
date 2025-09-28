@@ -1,0 +1,70 @@
+File ./data/gist-960-euclidean/gist-960-euclidean_query.fvecs loaded
+Rows 1000 Cols 960
+File ./data/gist-960-euclidean/gist-960-euclidean_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+false_pruned_count = 0.001
+false_pruned_count = 0.007
+false_pruned_count = 0.019
+false_pruned_count = 0.027
+false_pruned_count = 0.035
+false_pruned_count = 0.043
+false_pruned_count = 0.052
+false_pruned_count = 0.06
+false_pruned_count = 0.064
+false_pruned_count = 0.067
+false_pruned_count = 0.001
+false_pruned_count = 0.007
+false_pruned_count = 0.019
+false_pruned_count = 0.027
+false_pruned_count = 0.035
+false_pruned_count = 0.043
+false_pruned_count = 0.052
+false_pruned_count = 0.06
+false_pruned_count = 0.064
+false_pruned_count = 0.067
+false_pruned_count = 0.001
+false_pruned_count = 0.007
+false_pruned_count = 0.019
+false_pruned_count = 0.027
+false_pruned_count = 0.035
+false_pruned_count = 0.043
+false_pruned_count = 0.052
+false_pruned_count = 0.06
+false_pruned_count = 0.064
+false_pruned_count = 0.067
+false_pruned_count = 0.001
+false_pruned_count = 0.007
+false_pruned_count = 0.019
+false_pruned_count = 0.027
+false_pruned_count = 0.035
+false_pruned_count = 0.043
+false_pruned_count = 0.052
+false_pruned_count = 0.06
+false_pruned_count = 0.064
+false_pruned_count = 0.067
+false_pruned_count = 0.001
+false_pruned_count = 0.007
+false_pruned_count = 0.019
+false_pruned_count = 0.027
+false_pruned_count = 0.035
+false_pruned_count = 0.043
+false_pruned_count = 0.052
+false_pruned_count = 0.06
+false_pruned_count = 0.064
+false_pruned_count = 0.067
+nprobe	QPS	recall
+5	1678.09	0.3796	0
+10	1415.23	0.52332	0
+20	1108.99	0.67926	0
+30	926.464	0.76366	0
+40	802.503	0.81848	0
+50	712.159	0.85516	0
+60	641.566	0.88207	0
+70	578.885	0.90267	0
+80	525.787	0.91892	0
+90	480.466	0.93157	0

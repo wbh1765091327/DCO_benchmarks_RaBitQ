@@ -1,0 +1,32 @@
+File ./data/openai-1536-angular/openai-1536-angular_base.fvecs loaded
+Rows 999000 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_centroids_1999.fvecs loaded
+Rows 1999 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_clusterids_1999.ivecs loaded
+Rows 999000 Cols 1
+data loaded
+	N: 999000
+	DIM: 1536
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.641717
+File ./data/openai-1536-angular/openai-1536-angular_base.fvecs loaded
+Rows 999000 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_centroids_1999.fvecs loaded
+Rows 1999 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_clusterids_1999.ivecs loaded
+Rows 999000 Cols 1
+data loaded
+	N: 999000
+	DIM: 1536
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 39.1095s
+ivf constructed 
+Indexing time 0.652567

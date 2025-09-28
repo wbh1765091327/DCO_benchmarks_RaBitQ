@@ -1,0 +1,46 @@
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_query.fvecs loaded
+Rows 1000 Cols 200
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_groundtruth.ivecs loaded
+Rows 1000 Cols 10
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe	QPS	recall
+10	8654.07	0.5304
+20	5194.74	0.6913
+30	3842.18	0.7962
+40	3109.05	0.8646
+50	2650.85	0.9148
+60	2338.76	0.9496
+70	2118.62	0.9703
+80	1953.31	0.9801
+90	1827.51	0.9821
+100	1737.63	0.9829
+110	1667.05	0.9831
+120	1614.15	0.9833
+130	1548.12	0.9833
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_query.fvecs loaded
+Rows 1000 Cols 200
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_groundtruth.ivecs loaded
+Rows 1000 Cols 10
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe	QPS	recall
+10	8449.55	0.5296
+20	5099.62	0.6907
+30	3752.02	0.7949
+40	3034.63	0.8635
+50	2582.7	0.9136
+60	2279.39	0.9492
+70	2061.17	0.9697
+80	1897.88	0.9793
+90	1781.37	0.9813
+100	1686.68	0.9821
+110	1618.73	0.9823
+120	1570.64	0.9825
+130	1589.06	0.9825

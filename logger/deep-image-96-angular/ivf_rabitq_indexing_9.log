@@ -1,0 +1,32 @@
+File ./data/deep-image-96-angular/deep-image-96-angular_base.fvecs loaded
+Rows 9990000 Cols 96
+File ./data/deep-image-96-angular/deep-image-96-angular_centroids_12643.fvecs loaded
+Rows 12643 Cols 96
+File ./data/deep-image-96-angular/deep-image-96-angular_clusterids_12643.ivecs loaded
+Rows 9990000 Cols 1
+data loaded
+	N: 9990000
+	DIM: 96
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.449817
+File ./data/deep-image-96-angular/deep-image-96-angular_base.fvecs loaded
+Rows 9990000 Cols 96
+File ./data/deep-image-96-angular/deep-image-96-angular_centroids_12643.fvecs loaded
+Rows 12643 Cols 96
+File ./data/deep-image-96-angular/deep-image-96-angular_clusterids_12643.ivecs loaded
+Rows 9990000 Cols 1
+data loaded
+	N: 9990000
+	DIM: 96
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 27.3102s
+ivf constructed 
+Indexing time 0.457383

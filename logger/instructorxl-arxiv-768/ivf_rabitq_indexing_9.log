@@ -1,0 +1,32 @@
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_base.fvecs loaded
+Rows 2253000 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_centroids_3002.fvecs loaded
+Rows 3002 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_clusterids_3002.ivecs loaded
+Rows 2253000 Cols 1
+data loaded
+	N: 2253000
+	DIM: 768
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.6952
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_base.fvecs loaded
+Rows 2253000 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_centroids_3002.fvecs loaded
+Rows 3002 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_clusterids_3002.ivecs loaded
+Rows 2253000 Cols 1
+data loaded
+	N: 2253000
+	DIM: 768
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 42.7489s
+ivf constructed 
+Indexing time 0.713017

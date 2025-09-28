@@ -1,0 +1,95 @@
+File ./data/glove-200-angular/glove-200-angular_base.fvecs not exists
+File ./data/glove-200-angular/glove-200-angular_base.fvecs loaded
+Rows 1183514 Cols 200
+File ./data/glove-200-angular/glove-200-angular_centroids_2176.fvecs loaded
+Rows 2176 Cols 200
+File ./data/glove-200-angular/glove-200-angular_clusterids_2176.ivecs loaded
+Rows 1183514 Cols 1
+data loaded
+	N: 1183514
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.118133
+File ./data/glove-200-angular/glove-200-angular_base.fvecs loaded
+Rows 1183514 Cols 200
+File ./data/glove-200-angular/glove-200-angular_centroids_2176.fvecs loaded
+Rows 2176 Cols 200
+File ./data/glove-200-angular/glove-200-angular_clusterids_2176.ivecs loaded
+Rows 1183514 Cols 1
+data loaded
+	N: 1183514
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.118783
+File ./data/glove-200-angular/glove-200-angular_base.fvecs loaded
+Rows 1183514 Cols 200
+File ./data/glove-200-angular/glove-200-angular_centroids_2176.fvecs loaded
+Rows 2176 Cols 200
+File ./data/glove-200-angular/glove-200-angular_clusterids_2176.ivecs loaded
+Rows 1183514 Cols 1
+data loaded
+	N: 1183514
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.119233
+File ./data/glove-200-angular/glove-200-angular_base.fvecs loaded
+Rows 1183514 Cols 200
+File ./data/glove-200-angular/glove-200-angular_centroids_2176.fvecs loaded
+Rows 2176 Cols 200
+File ./data/glove-200-angular/glove-200-angular_clusterids_2176.ivecs loaded
+Rows 1183514 Cols 1
+data loaded
+	N: 1183514
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.118783
+File ./data/glove-200-angular/glove-200-angular_base.fvecs loaded
+Rows 1183514 Cols 200
+File ./data/glove-200-angular/glove-200-angular_centroids_2176.fvecs loaded
+Rows 2176 Cols 200
+File ./data/glove-200-angular/glove-200-angular_clusterids_2176.ivecs loaded
+Rows 1183514 Cols 1
+data loaded
+	N: 1183514
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 7.31439s
+ivf constructed 
+Indexing time 0.122167
+File ./data/glove-200-angular/glove-200-angular_base.fvecs loaded
+Rows 1183514 Cols 200
+File ./data/glove-200-angular/glove-200-angular_centroids_2176.fvecs loaded
+Rows 2176 Cols 200
+File ./data/glove-200-angular/glove-200-angular_clusterids_2176.ivecs loaded
+Rows 1183514 Cols 1
+data loaded
+	N: 1183514
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 7.24719s
+ivf constructed 
+Indexing time 0.120983

@@ -1,0 +1,13 @@
+File ./data/glove-200-angular_1k/glove-200-angular_1k_query.fvecs loaded
+Rows 1000 Cols 200
+File ./data/glove-200-angular_1k/glove-200-angular_1k_groundtruth.ivecs loaded
+Rows 1000 Cols 10
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe	QPS	recall
+10	46766.6	0.9935
+20	43160.1	0.9936
+30	40233.4	0.9936

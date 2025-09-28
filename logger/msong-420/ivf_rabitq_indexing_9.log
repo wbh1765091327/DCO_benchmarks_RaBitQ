@@ -1,0 +1,32 @@
+File ./data/msong-420/msong-420_base.fvecs loaded
+Rows 983185 Cols 420
+File ./data/msong-420/msong-420_centroids_1984.fvecs loaded
+Rows 1984 Cols 420
+File ./data/msong-420/msong-420_clusterids_1984.ivecs loaded
+Rows 983185 Cols 1
+data loaded
+	N: 983185
+	DIM: 420
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.169567
+File ./data/msong-420/msong-420_base.fvecs loaded
+Rows 983185 Cols 420
+File ./data/msong-420/msong-420_centroids_1984.fvecs loaded
+Rows 1984 Cols 420
+File ./data/msong-420/msong-420_clusterids_1984.ivecs loaded
+Rows 983185 Cols 1
+data loaded
+	N: 983185
+	DIM: 420
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+Start Rotate and Quantize ...
+Rotate and Quantize time = 10.4929s
+ivf constructed 
+Indexing time 0.175067

@@ -1,0 +1,59 @@
+File ./data/contriever-768/contriever-768_query.fvecs loaded
+Rows 10000 Cols 768
+File ./data/contriever-768/contriever-768_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1990).
+nprobe	QPS	recall
+5	2010.11	0.602878
+10	1691.1	0.694002
+20	1356.14	0.768041
+30	1155.69	0.80482
+40	1014.47	0.828264
+50	902.989	0.844897
+60	814.877	0.857684
+70	746.761	0.867787
+80	689.863	0.876059
+90	641.902	0.882991
+100	599.518	0.889125
+110	562.722	0.894517
+120	530.045	0.89921
+130	491.173	0.903408
+140	465.255	0.907392
+150	441.963	0.910961
+160	442.146	0.914279
+170	402.223	0.917332
+180	385.316	0.920202
+190	369.441	0.922729
+200	373.023	0.925222
+240	322.684	0.93396
+280	284.393	0.941235
+320	254.753	0.947402
+360	230.563	0.95265
+400	210.561	0.957277
+500	166.269	0.966766
+600	147.496	0.973748
+700	121.129	0.979298
+800	114.683	0.983431
+900	100.104	0.986521
+1000	95.8013	0.988838
+1100	84.7243	0.990413
+1200	81.4189	0.991474
+1300	73.1437	0.992115
+1400	74.4139	0.992478
+1500	68.3993	0.992665
+2000	64.9944	0.992766
+2500	64.9822	0.992766

@@ -1,0 +1,37 @@
+Using L2 metric by default
+Reading File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs readed
+Time for training ivf 6.960988759994507 secs
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_316.ivecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_316.ivecs wrote
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_316.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_316.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 200D
+Training IVF residual
+IndexIVF: no residual training
+Using L2 metric by default
+Reading File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs readed
+Time for training ivf 6.976543426513672 secs
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_316.ivecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_316.ivecs wrote
+Writing File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_316.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_316.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 200D
+Training IVF residual
+IndexIVF: no residual training
+Using L2 metric by default
+Reading File - ./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs
+	./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs readed
+Training level-1 quantizer
+Training level-1 quantizer on 100000 vectors in 200D
+Traceback (most recent call last):
+  File "./python/ivf.py", line 45, in <module>
+    index.train(X)
+  File "/home/wbh/.local/lib/python3.8/site-packages/faiss/class_wrappers.py", line 298, in replacement_train
+    self.train_c(n, swig_ptr(x))
+  File "/home/wbh/.local/lib/python3.8/site-packages/faiss/swigfaiss_avx512.py", line 5781, in train
+    return _swigfaiss_avx512.IndexIVF_train(self, n, x)
+KeyboardInterrupt

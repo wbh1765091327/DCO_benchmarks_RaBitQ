@@ -1,0 +1,21 @@
+File ./data/contriever-768/contriever-768_query.fvecs not exists
+File ./data/contriever-768/contriever-768_query.fvecs loaded
+Rows 10000 Cols 768
+File ./data/contriever-768/contriever-768_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 13s
+File ./data/contriever-768/contriever-768_query.fvecs loaded
+Rows 10000 Cols 768
+File ./data/contriever-768/contriever-768_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+Rotated time = 15us

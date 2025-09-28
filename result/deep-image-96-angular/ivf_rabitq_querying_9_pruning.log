@@ -1,0 +1,70 @@
+File ./data/deep-image-96-angular/deep-image-96-angular_query.fvecs loaded
+Rows 10000 Cols 96
+File ./data/deep-image-96-angular/deep-image-96-angular_groundtruth.ivecs loaded
+Rows 10000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+false_pruned_count = 0.0164
+false_pruned_count = 0.0389
+false_pruned_count = 0.0668
+false_pruned_count = 0.0824
+false_pruned_count = 0.0925
+false_pruned_count = 0.0986
+false_pruned_count = 0.1033
+false_pruned_count = 0.1068
+false_pruned_count = 0.1096
+false_pruned_count = 0.1122
+false_pruned_count = 0.0164
+false_pruned_count = 0.0389
+false_pruned_count = 0.0668
+false_pruned_count = 0.0824
+false_pruned_count = 0.0925
+false_pruned_count = 0.0986
+false_pruned_count = 0.1033
+false_pruned_count = 0.1068
+false_pruned_count = 0.1096
+false_pruned_count = 0.1122
+false_pruned_count = 0.0164
+false_pruned_count = 0.0389
+false_pruned_count = 0.0668
+false_pruned_count = 0.0824
+false_pruned_count = 0.0925
+false_pruned_count = 0.0986
+false_pruned_count = 0.1033
+false_pruned_count = 0.1068
+false_pruned_count = 0.1096
+false_pruned_count = 0.1122
+false_pruned_count = 0.0164
+false_pruned_count = 0.0389
+false_pruned_count = 0.0668
+false_pruned_count = 0.0824
+false_pruned_count = 0.0925
+false_pruned_count = 0.0986
+false_pruned_count = 0.1033
+false_pruned_count = 0.1068
+false_pruned_count = 0.1096
+false_pruned_count = 0.1122
+false_pruned_count = 0.0164
+false_pruned_count = 0.0389
+false_pruned_count = 0.0668
+false_pruned_count = 0.0824
+false_pruned_count = 0.0925
+false_pruned_count = 0.0986
+false_pruned_count = 0.1033
+false_pruned_count = 0.1068
+false_pruned_count = 0.1096
+false_pruned_count = 0.1122
+nprobe	QPS	recall
+5	2423.7	0.576485	0
+10	2105.85	0.712527	0
+20	1728.69	0.824749	0
+30	1525.24	0.875483	0
+40	1368.74	0.904531	0
+50	1235.6	0.923332	0
+60	1114.24	0.936328	0
+70	1008.97	0.946068	0
+80	913.099	0.953667	0
+90	834.994	0.959406	0

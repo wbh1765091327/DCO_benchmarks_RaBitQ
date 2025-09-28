@@ -1,0 +1,30 @@
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs loaded
+Rows 100000 Cols 200
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_316.fvecs loaded
+Rows 316 Cols 200
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_316.ivecs loaded
+Rows 100000 Cols 1
+data loaded
+	N: 100000
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.00716667
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_base.fvecs loaded
+Rows 100000 Cols 200
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_centroids_316.fvecs loaded
+Rows 316 Cols 200
+File ./data/_glove-200-angular_100k/_glove-200-angular_100k_clusterids_316.ivecs loaded
+Rows 100000 Cols 1
+data loaded
+	N: 100000
+	DIM: 200
+FhtKacRotator is selected
+Start IVF construction...
+	Loading clustering information...
+Allocating memory for IVF...
+ivf constructed 
+Indexing time 0.0072

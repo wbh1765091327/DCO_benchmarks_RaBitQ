@@ -1,0 +1,10 @@
+Using L2 metric by default
+Reading File - ./data/glove-200-angular/glove-200-angular_base.fvecs
+Traceback (most recent call last):
+  File "./python/ivf.py", line 36, in <module>
+    X = read_fvecs(data_path)
+  File "/home/wbh/cppwork/RaBitQ-Library/python/utils/io.py", line 14, in read_fvecs
+    return read_ivecs(filename).view("float32")
+  File "/home/wbh/cppwork/RaBitQ-Library/python/utils/io.py", line 7, in read_ivecs
+    a = np.fromfile(filename, dtype="int32")
+KeyboardInterrupt

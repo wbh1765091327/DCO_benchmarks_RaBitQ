@@ -1,0 +1,8 @@
+Using L2 metric by default
+Reading File - ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs
+	./data/sift-128-euclidean/sift-128-euclidean_base.fvecs readed
+Time for training ivf 0.2447514533996582 secs
+Training level-1 quantizer
+Training level-1 quantizer on 1000000 vectors in 128D
+Training IVF residual
+IndexIVF: no residual training

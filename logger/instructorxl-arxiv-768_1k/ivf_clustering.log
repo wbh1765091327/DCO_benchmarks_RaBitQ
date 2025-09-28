@@ -1,0 +1,13 @@
+WARNING clustering 1000 points to 31 centroids: please provide at least 1209 training points
+Using L2 metric by default
+Reading File - ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_base.fvecs
+	./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_base.fvecs readed
+Time for training ivf 0.04073333740234375 secs
+Writing File - ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_clusterids_31.ivecs
+	./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_clusterids_31.ivecs wrote
+Writing File - ./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_centroids_31.fvecs
+	./data/instructorxl-arxiv-768_1k/instructorxl-arxiv-768_1k_centroids_31.fvecs wrote
+Training level-1 quantizer
+Training level-1 quantizer on 1000 vectors in 768D
+Training IVF residual
+IndexIVF: no residual training

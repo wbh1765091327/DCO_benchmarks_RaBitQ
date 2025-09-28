@@ -1,0 +1,13 @@
+Metric Type: L2
+File ./data/sift-128-euclidean/sift-128-euclidean_base.fvecs loaded
+Rows 1000000 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_centroids_16.fvecs loaded
+Rows 16 Cols 128
+File ./data/sift-128-euclidean/sift-128-euclidean_clusterids_16.ivecs loaded
+Rows 1000000 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 70.4743s
+cur_element_count = 1000000
+index saved...

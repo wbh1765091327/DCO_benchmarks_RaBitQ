@@ -1,0 +1,15 @@
+Metric Type: L2
+File ./data/glove-200-angular/glove-200-angular_base.fvecs not exists
+Metric Type: L2
+File ./data/glove-200-angular/glove-200-angular_base.fvecs loaded
+Rows 1183514 Cols 200
+File ./data/glove-200-angular/glove-200-angular_centroids_16.fvecs loaded
+Rows 16 Cols 200
+File ./data/glove-200-angular/glove-200-angular_clusterids_16.ivecs loaded
+Rows 1183514 Cols 1
+FhtKacRotator is selected
+Start HierarchicalNSW construction...
+Build edges with non-quantized vectors...
+indexing time = 148.392s
+cur_element_count = 1183514
+index saved...

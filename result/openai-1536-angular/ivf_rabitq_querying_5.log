@@ -1,0 +1,59 @@
+File ./data/openai-1536-angular/openai-1536-angular_query.fvecs loaded
+Rows 1000 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2000 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe 2500 is larger than number of clusters, will use nprobe = num_cluster (1999).
+nprobe	QPS	recall
+5	1478.04	0.69888
+10	1316.48	0.77497
+20	1107.77	0.83474
+30	964.596	0.86552
+40	856.106	0.88534
+50	768.253	0.89949
+60	698.117	0.91047
+70	640.12	0.91926
+80	591.496	0.9264
+90	551.067	0.93216
+100	514.91	0.93695
+110	483.21	0.9408
+120	455.454	0.9444
+130	406.283	0.94738
+140	385.127	0.95025
+150	388.217	0.95292
+160	349.251	0.95541
+170	333.315	0.95729
+180	318.925	0.95892
+190	325.182	0.96081
+200	293.15	0.96264
+240	252.765	0.96735
+280	221.974	0.97076
+320	197.872	0.97325
+360	178.114	0.97549
+400	162.912	0.9773
+500	134.841	0.98074
+600	114.993	0.98261
+700	100.54	0.98381
+800	89.3615	0.98474
+900	79.9756	0.98545
+1000	72.7042	0.9859
+1100	66.7944	0.98633
+1200	61.9172	0.98663
+1300	57.5359	0.98682
+1400	53.4835	0.98713
+1500	50.1594	0.98736
+2000	42.3684	0.98778
+2500	42.3626	0.98778

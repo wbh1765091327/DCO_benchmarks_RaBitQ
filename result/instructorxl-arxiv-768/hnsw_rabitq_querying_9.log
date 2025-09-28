@@ -1,0 +1,32 @@
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_query.fvecs loaded
+Rows 1000 Cols 768
+File ./data/instructorxl-arxiv-768/instructorxl-arxiv-768_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Metric Type: L2
+cur_element_count = 2253000
+FhtKacRotator is selected
+search start >.....
+EF	QPS	Recall	
+10	8305.7	0.7421	
+20	6407.97	0.8507	
+40	4561.75	0.924	
+50	4055.17	0.939	
+60	3582.06	0.9525	
+80	2845.48	0.9648	
+100	2480.29	0.9721	
+150	1789.98	0.9829	
+170	1632.05	0.9847	
+190	1493.67	0.9868	
+200	1436.77	0.9875	
+250	1188.75	0.9902	
+300	1010.43	0.9918	
+400	779.881	0.9934	
+500	635.4	0.9942	
+600	543.085	0.9946	
+700	468.498	0.9947	
+800	413.149	0.9949	
+1000	335.816	0.9951	
+1500	227.672	0.9956	
+2000	172.082	0.9956	
+2500	136.641	0.9957	
+3000	112.387	0.996	

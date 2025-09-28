@@ -1,0 +1,70 @@
+File ./data/openai-1536-angular/openai-1536-angular_query.fvecs loaded
+Rows 1000 Cols 1536
+File ./data/openai-1536-angular/openai-1536-angular_groundtruth.ivecs loaded
+Rows 1000 Cols 100
+Loading IVF...
+	Loading meta data...
+FhtKacRotator is selected
+Allocating memory for IVF...
+Index loaded
+false_pruned_count = 0.004
+false_pruned_count = 0.006
+false_pruned_count = 0.009
+false_pruned_count = 0.012
+false_pruned_count = 0.015
+false_pruned_count = 0.018
+false_pruned_count = 0.019
+false_pruned_count = 0.02
+false_pruned_count = 0.02
+false_pruned_count = 0.023
+false_pruned_count = 0.004
+false_pruned_count = 0.006
+false_pruned_count = 0.009
+false_pruned_count = 0.012
+false_pruned_count = 0.015
+false_pruned_count = 0.018
+false_pruned_count = 0.019
+false_pruned_count = 0.02
+false_pruned_count = 0.02
+false_pruned_count = 0.023
+false_pruned_count = 0.004
+false_pruned_count = 0.006
+false_pruned_count = 0.009
+false_pruned_count = 0.012
+false_pruned_count = 0.015
+false_pruned_count = 0.018
+false_pruned_count = 0.019
+false_pruned_count = 0.02
+false_pruned_count = 0.02
+false_pruned_count = 0.023
+false_pruned_count = 0.004
+false_pruned_count = 0.006
+false_pruned_count = 0.009
+false_pruned_count = 0.012
+false_pruned_count = 0.015
+false_pruned_count = 0.018
+false_pruned_count = 0.019
+false_pruned_count = 0.02
+false_pruned_count = 0.02
+false_pruned_count = 0.023
+false_pruned_count = 0.004
+false_pruned_count = 0.006
+false_pruned_count = 0.009
+false_pruned_count = 0.012
+false_pruned_count = 0.015
+false_pruned_count = 0.018
+false_pruned_count = 0.019
+false_pruned_count = 0.02
+false_pruned_count = 0.02
+false_pruned_count = 0.023
+nprobe	QPS	recall
+5	1245.95	0.69942	0
+10	1122.15	0.77586	0
+20	930.544	0.83607	0
+30	815.171	0.86723	0
+40	714.95	0.88733	0
+50	644.112	0.90172	0
+60	576.432	0.91294	0
+70	513.275	0.92208	0
+80	473.198	0.92949	0
+90	442.001	0.9356	0

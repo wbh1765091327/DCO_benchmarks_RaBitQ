@@ -1,0 +1,8 @@
+Using L2 metric by default
+Reading File - ./data/contriever-768/contriever-768_base.fvecs
+	./data/contriever-768/contriever-768_base.fvecs readed
+Time for training ivf 1.4240944385528564 secs
+Training level-1 quantizer
+Training level-1 quantizer on 990000 vectors in 768D
+Training IVF residual
+IndexIVF: no residual training
