@@ -566,35 +566,62 @@ inline TF ip_fxi(const TF* __restrict__ vec0, const TI* __restrict__ vec1, size_
 using ex_ipfunc = float (*)(const float*, const uint8_t*, size_t);
 
 inline ex_ipfunc select_excode_ipfunc(size_t ex_bits) {
-    if (ex_bits <= 1) {
-        // when ex_bits = 0, we do not use it
-        return excode_ipimpl::ip16_fxu1_avx512;
+    #if defined(USE_EXPLICIT_SIMD)
+        if (ex_bits <= 1) {
+            // when ex_bits = 0, we do not use it
+            return excode_ipimpl::ip16_fxu1_avx512;
+        }
+        if (ex_bits == 2) {
+            return excode_ipimpl::ip16_fxu2_avx512;
+        }
+        if (ex_bits == 3) {
+            return excode_ipimpl::ip64_fxu3_avx512;
+        }
+        if (ex_bits == 4) {
+            return excode_ipimpl::ip16_fxu4_avx512;
+        }
+        if (ex_bits == 5) {
+            return excode_ipimpl::ip64_fxu5_avx512;
+        }
+        if (ex_bits == 6) {
+            return excode_ipimpl::ip16_fxu6_avx512;
+        }
+        if (ex_bits == 7) {
+            return excode_ipimpl::ip64_fxu7_avx512;
+        }
+        if (ex_bits == 8) {
+            return excode_ipimpl::ip_fxi;
+        }
+    #else
+        // Scalar 版本
+        if (ex_bits <= 1) {
+            return excode_ipimpl::ip16_fxu1_scalar;
+        }
+        if (ex_bits == 2) {
+            return excode_ipimpl::ip16_fxu2_scalar;
+        }
+        if (ex_bits == 3) {
+            return excode_ipimpl::ip64_fxu3_scalar;
+        }
+        if (ex_bits == 4) {
+            return excode_ipimpl::ip16_fxu4_scalar; 
+        }
+        if (ex_bits == 5) {
+            return excode_ipimpl::ip64_fxu5_scalar;
+        }
+        if (ex_bits == 6) {
+            return excode_ipimpl::ip16_fxu6_scalar;
+        }
+        if (ex_bits == 7) {
+            return excode_ipimpl::ip64_fxu7_scalar;
+        }
+        if (ex_bits == 8) {
+            return excode_ipimpl::ip_fxi;  // 已经是 Scalar
+        }
+    #endif
+        std::cerr << "Bad IP function for IVF\n";
+        exit(1);
     }
-    if (ex_bits == 2) {
-        return excode_ipimpl::ip16_fxu2_avx512;
-    }
-    if (ex_bits == 3) {
-        return excode_ipimpl::ip64_fxu3_avx512;
-    }
-    if (ex_bits == 4) {
-        return excode_ipimpl::ip16_fxu4_avx512;
-    }
-    if (ex_bits == 5) {
-        return excode_ipimpl::ip64_fxu5_avx512;
-    }
-    if (ex_bits == 6) {
-        return excode_ipimpl::ip16_fxu6_avx512;
-    }
-    if (ex_bits == 7) {
-        return excode_ipimpl::ip64_fxu7_avx512;
-    }
-    if (ex_bits == 8) {
-        return excode_ipimpl::ip_fxi;
-    }
-
-    std::cerr << "Bad IP function for IVF\n";
-    exit(1);
-}
 
 static inline uint32_t reverse_bits(uint32_t n) {
     n = ((n >> 1) & 0x55555555) | ((n << 1) & 0xaaaaaaaa);
@@ -636,6 +663,7 @@ inline void transpose_bin(
 static inline void new_transpose_bin(
     const uint16_t* q, uint64_t* tq, size_t padded_dim, size_t b_query
 ) {
+#if defined(USE_EXPLICIT_SIMD)
     // 512 / 16 = 32
     for (size_t i = 0; i < padded_dim; i += 64) {
         __m512i vec_00_to_31 = _mm512_loadu_si512(q);
@@ -661,6 +689,28 @@ static inline void new_transpose_bin(
         tq += b_query;
         q += 64;
     }
+#else
+    for (size_t i = 0; i < padded_dim; i += 64) {
+            
+        for (size_t b = 0; b < b_query; ++b) {
+            uint64_t plane_bits = 0;
+
+            for (size_t k = 0; k < 64; ++k) {
+                uint16_t val = q[k];  // ✅ 修复：只用 k，因为 q 指针会移动
+                uint64_t bit = (val >> b) & 1;
+
+                if (bit) {
+                    plane_bits |= (1ULL << (63 - k));
+                }
+            }
+
+            tq[b] = plane_bits;
+        }
+
+        q += 64;
+        tq += b_query;
+    }
+#endif
 }
 
 inline float mask_ip_x0_q_old(const float* query, const uint64_t* data, size_t padded_dim) {
@@ -698,43 +748,67 @@ inline float mask_ip_x0_q_old(const float* query, const uint64_t* data, size_t p
 }
 
 inline float mask_ip_x0_q(const float* query, const uint64_t* data, size_t padded_dim) {
-    const size_t num_blk = padded_dim / 64;
-    const uint64_t* it_data = data;
-    const float* it_query = query;
-
-    //    __m512 sum0 = _mm512_setzero_ps();
-    //    __m512 sum1 = _mm512_setzero_ps();
-    //    __m512 sum2 = _mm512_setzero_ps();
-    //    __m512 sum3 = _mm512_setzero_ps();
-
-    __m512 sum = _mm512_setzero_ps();
-    for (size_t i = 0; i < num_blk; ++i) {
-        uint64_t bits = reverse_bits_u64(*it_data);
-
-        __mmask16 mask0 = static_cast<__mmask16>(bits);
-        __mmask16 mask1 = static_cast<__mmask16>(bits >> 16);
-        __mmask16 mask2 = static_cast<__mmask16>(bits >> 32);
-        __mmask16 mask3 = static_cast<__mmask16>(bits >> 48);
-
-        __m512 masked0 = _mm512_maskz_loadu_ps(mask0, it_query);
-        __m512 masked1 = _mm512_maskz_loadu_ps(mask1, it_query + 16);
-        __m512 masked2 = _mm512_maskz_loadu_ps(mask2, it_query + 32);
-        __m512 masked3 = _mm512_maskz_loadu_ps(mask3, it_query + 48);
-
-        sum = _mm512_add_ps(sum, masked0);
-        sum = _mm512_add_ps(sum, masked1);
-        sum = _mm512_add_ps(sum, masked2);
-        sum = _mm512_add_ps(sum, masked3);
-
-        //         _mm_prefetch(reinterpret_cast<const char*>(it_query + 128), _MM_HINT_T1);
-
-        ++it_data;
-        it_query += 64;
+    #if defined(USE_EXPLICIT_SIMD)
+        const size_t num_blk = padded_dim / 64;
+        const uint64_t* it_data = data;
+        const float* it_query = query;
+    
+        //    __m512 sum0 = _mm512_setzero_ps();
+        //    __m512 sum1 = _mm512_setzero_ps();
+        //    __m512 sum2 = _mm512_setzero_ps();
+        //    __m512 sum3 = _mm512_setzero_ps();
+    
+        __m512 sum = _mm512_setzero_ps();
+        for (size_t i = 0; i < num_blk; ++i) {
+            uint64_t bits = reverse_bits_u64(*it_data);
+    
+            __mmask16 mask0 = static_cast<__mmask16>(bits);
+            __mmask16 mask1 = static_cast<__mmask16>(bits >> 16);
+            __mmask16 mask2 = static_cast<__mmask16>(bits >> 32);
+            __mmask16 mask3 = static_cast<__mmask16>(bits >> 48);
+    
+            __m512 masked0 = _mm512_maskz_loadu_ps(mask0, it_query);
+            __m512 masked1 = _mm512_maskz_loadu_ps(mask1, it_query + 16);
+            __m512 masked2 = _mm512_maskz_loadu_ps(mask2, it_query + 32);
+            __m512 masked3 = _mm512_maskz_loadu_ps(mask3, it_query + 48);
+    
+            sum = _mm512_add_ps(sum, masked0);
+            sum = _mm512_add_ps(sum, masked1);
+            sum = _mm512_add_ps(sum, masked2);
+            sum = _mm512_add_ps(sum, masked3);
+    
+            //         _mm_prefetch(reinterpret_cast<const char*>(it_query + 128), _MM_HINT_T1);
+    
+            ++it_data;
+            it_query += 64;
+        }
+    
+        //    __m512 sum = _mm512_add_ps(_mm512_add_ps(sum0, sum1), _mm512_add_ps(sum2, sum3));
+        return _mm512_reduce_add_ps(sum);
+    #else
+        float sum = 0.0f;
+        size_t num_blk = padded_dim / 64;
+    
+        const uint64_t* it_data = data;
+        const float* it_query = query;
+    
+        for (size_t i = 0; i < num_blk; ++i) {
+            uint64_t blk_bits = *it_data;
+            uint64_t mask = 1ULL << 63; 
+            for (size_t j = 0; j < 64; ++j) {
+                if (blk_bits & mask) {
+                    sum += it_query[j];
+                }
+                mask >>= 1; // 掩码右移，检查下一位
+            }
+    
+            it_data++;
+            it_query += 64;
+        }
+    
+        return sum;
+    #endif
     }
-
-    //    __m512 sum = _mm512_add_ps(_mm512_add_ps(sum0, sum1), _mm512_add_ps(sum2, sum3));
-    return _mm512_reduce_add_ps(sum);
-}
 
 inline float ip_x0_q(
     const uint64_t* data,

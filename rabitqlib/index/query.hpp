@@ -104,6 +104,7 @@ class SplitBatchQuery {
     }
 
     [[nodiscard]] const uint8_t* lut() const { return lookup_table_.lut(); }
+    [[nodiscard]] size_t lut_size_bytes() const { return lookup_table_.lut_size_bytes(); }  // 新增
 };
 
 template <typename T>

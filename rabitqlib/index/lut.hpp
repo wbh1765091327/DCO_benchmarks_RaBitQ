@@ -61,6 +61,7 @@ class Lut {
     }
 
     [[nodiscard]] const uint8_t* lut() const { return lut_.data(); };
+    [[nodiscard]] size_t lut_size_bytes() const { return lut_.size(); }  
     [[nodiscard]] T delta() const { return delta_; };
     [[nodiscard]] T sum_vl() const { return sum_vl_lut_; };
 };

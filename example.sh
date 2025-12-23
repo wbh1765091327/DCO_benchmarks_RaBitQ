@@ -61,19 +61,19 @@ for dataset in "${datasets[@]}"; do
         dataset_ivf_index="./data/${dataset}/${dataset}_ivf_${bits}_test.index"
         python3 ./python/ivf.py ${dataset_base} ${ivf_C} ${ivf_centroids_path} ${ivf_cluster_id_path} 
         ./bin/ivf_rabitq_indexing ${dataset_base} ${ivf_centroids_path} ${ivf_cluster_id_path} ${bits} ${dataset_ivf_index}
-        # res3="./result/${dataset}/${dataset}_ad_ivf_perf_result.txt"
-        # /usr/bin/time -v \
-        # perf stat \
-        #     -e instructions,cycles,branches,branch-misses \
-        #     -e cache-misses,cache-references \
-        #     -e L1-dcache-load-misses,L1-dcache-loads \
-        #     -e L1-dcache-store-misses,L1-dcache-stores \
-        #     -e LLC-load-misses,LLC-loads \
-        #     -e LLC-store-misses,LLC-stores \
-        #     -e dTLB-load-misses,dTLB-loads \
-        #     -e dTLB-store-misses,dTLB-stores \
-        #     -e page-faults \
-        #     -o ${res3} \
+        res3="./result/${dataset}/${dataset}_ad_ivf_perf_result.txt"
+        /usr/bin/time -v \
+        perf stat \
+            -e instructions,cycles,branches,branch-misses \
+            -e cache-misses,cache-references \
+            -e L1-dcache-load-misses,L1-dcache-loads \
+            -e L1-dcache-store-misses,L1-dcache-stores \
+            -e LLC-load-misses,LLC-loads \
+            -e LLC-store-misses,LLC-stores \
+            -e dTLB-load-misses,dTLB-loads \
+            -e dTLB-store-misses,dTLB-stores \
+            -e page-faults \
+            -o ${res3} \
         ./bin/ivf_rabitq_querying ${dataset_ivf_index} ${dataset_query} ${dataset_groundtruth}  >> result/${dataset}/hnsw_rabitq_querying_${bits}_pruning.log 2>&1
     done
 
@@ -83,19 +83,19 @@ for dataset in "${datasets[@]}"; do
         dataset_hnsw_index="./data/${dataset}/${dataset}_hnsw_${bits}.index"
         python3 ./python/ivf.py ${dataset_base} 16 ${hnsw_centroids_path} ${hnsw_cluster_id_path} >> logger/${dataset}/hnsw_clustering.log 2>&1
         ./bin/hnsw_rabitq_indexing ${dataset_base} ${hnsw_centroids_path} ${hnsw_cluster_id_path} 16 500 ${bits} ${dataset_hnsw_index} >> logger/${dataset}/hnsw_rabitq_indexing_${bits}.log 2>&1
-        # res3="./result/${dataset}/${dataset}_ad_hnsw_perf_result.txt"
-        # /usr/bin/time -v \
-        # perf stat \
-        #     -e instructions,cycles,branches,branch-misses \
-        #     -e cache-misses,cache-references \
-        #     -e L1-dcache-load-misses,L1-dcache-loads \
-        #     -e L1-dcache-store-misses,L1-dcache-stores \
-        #     -e LLC-load-misses,LLC-loads \
-        #     -e LLC-store-misses,LLC-stores \
-        #     -e dTLB-load-misses,dTLB-loads \
-        #     -e dTLB-store-misses,dTLB-stores \
-        #     -e page-faults \
-        #     -o ${res3} \
+        res3="./result/${dataset}/${dataset}_ad_hnsw_perf_result.txt"
+        /usr/bin/time -v \
+        perf stat \
+            -e instructions,cycles,branches,branch-misses \
+            -e cache-misses,cache-references \
+            -e L1-dcache-load-misses,L1-dcache-loads \
+            -e L1-dcache-store-misses,L1-dcache-stores \
+            -e LLC-load-misses,LLC-loads \
+            -e LLC-store-misses,LLC-stores \
+            -e dTLB-load-misses,dTLB-loads \
+            -e dTLB-store-misses,dTLB-stores \
+            -e page-faults \
+            -o ${res3} \
         ./bin/hnsw_rabitq_querying ${dataset_hnsw_index} ${dataset_query} ${dataset_groundtruth} >> result/${dataset}/hnsw_rabitq_querying_${bits}_pruning.log 2>&1
     done
 

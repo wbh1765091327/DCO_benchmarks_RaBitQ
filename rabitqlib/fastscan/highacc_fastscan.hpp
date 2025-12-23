@@ -20,14 +20,14 @@ inline void transfer_lut_hacc(const uint16_t* lut, size_t dim, uint8_t* hc_lut) 
 
     for (size_t i = 0; i < num_codebook; i++) {
         // avx2 - 256, avx512 - 512
-#if defined(__AVX512F__)
-        constexpr size_t kRegBits = 512;
-#elif defined(__AVX2__)
-        constexpr size_t B_regi = 256;
-#else
-        static_assert(false, "At least requried AVX2 for using fastscan\n");
-        exit(1);
-#endif
+// #if defined(__AVX512F__)
+//         constexpr size_t kRegBits = 512;
+// #elif defined(__AVX2__)
+//         constexpr size_t B_regi = 256;
+// #else
+//         static_assert(false, "At least requried AVX2 for using fastscan\n");
+//         exit(1);
+// #endif
         constexpr size_t kLaneBits = 128;
         constexpr size_t kByteBits = 8;
 
@@ -39,7 +39,7 @@ inline void transfer_lut_hacc(const uint16_t* lut, size_t dim, uint8_t* hc_lut) 
             hc_lut + (i / kLutPerIter * kCodePerIter) + ((i % kLutPerIter) * kCodePerLine);
         uint8_t* fill_hi = fill_lo + (kRegBits / kByteBits);
 
-#if defined(__AVX512F__)
+#if defined(USE_EXPLICIT_SIMD)
         __m512i tmp = _mm512_cvtepi16_epi32(_mm256_loadu_epi16(lut));
         __m128i lo = _mm512_cvtepi32_epi8(tmp);
         __m128i hi = _mm512_cvtepi32_epi8(_mm512_srli_epi32(tmp, 8));
@@ -64,6 +64,7 @@ inline void accumulate_hacc(
     int32_t* accu_res,
     size_t dim
 ) {
+#if defined(USE_EXPLICIT_SIMD)
     __m512i low_mask = _mm512_set1_epi8(0xf);
     __m512i accu[2][4];
 
@@ -142,5 +143,48 @@ inline void accumulate_hacc(
 
     _mm512_storeu_epi32(accu_res, res[0]);
     _mm512_storeu_epi32(accu_res + 16, res[1]);
+#else
+    size_t num_codebook = dim >> 2; 
+    std::array<int32_t, 32> accu_lo = {};  // 低8位 LUT 结果
+    std::array<int32_t, 32> accu_hi = {};  // 高8位 LUT 结果
+
+    // kPerm0 定义了 FastScan 数据的排列顺序
+    constexpr std::array<int, 16> kPerm0 = {
+        0, 8, 1, 9, 2, 10, 3, 11, 4, 12, 5, 13, 6, 14, 7, 15
+    };
+
+    for (size_t m = 0; m < num_codebook; m += 4) {
+        // 处理4个 codebook (64 bytes 的 codes)
+        for (size_t cb = 0; cb < 4; ++cb) {
+            const uint8_t* lut_lo = hc_lut + cb * 16;           // 低8位 LUT
+            const uint8_t* lut_hi = hc_lut + 64 + cb * 16;      // 高8位 LUT
+            const uint8_t* code_ptr = codes + cb * 16;
+
+            for (size_t j = 0; j < 16; ++j) {
+                uint8_t packed_code = code_ptr[j];
+                uint8_t code_lo = packed_code & 0x0f;        // 向量 kPerm0[j] 的 code
+                uint8_t code_hi = (packed_code >> 4) & 0x0f; // 向量 kPerm0[j]+16 的 code
+
+                int vec_idx_lo = kPerm0[j];
+                int vec_idx_hi = kPerm0[j] + 16;
+
+                // 累加低8位和高8位 LUT 的查表结果
+                accu_lo[vec_idx_lo] += static_cast<int32_t>(lut_lo[code_lo]);
+                accu_hi[vec_idx_lo] += static_cast<int32_t>(lut_hi[code_lo]);
+
+                accu_lo[vec_idx_hi] += static_cast<int32_t>(lut_lo[code_hi]);
+                accu_hi[vec_idx_hi] += static_cast<int32_t>(lut_hi[code_hi]);
+            }
+        }
+        codes += 64;
+        hc_lut += 128;  // 2 * 64 (低8位 LUT + 高8位 LUT)
+    }
+
+    // 合并结果: result = accu_lo + (accu_hi << 8)
+    for (size_t i = 0; i < 32; ++i) {
+        accu_res[i] = accu_lo[i] + (accu_hi[i] << 8);
+    }
+
+#endif
 }
 }  // namespace rabitqlib::fastscan

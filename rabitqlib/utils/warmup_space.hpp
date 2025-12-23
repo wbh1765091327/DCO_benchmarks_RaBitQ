@@ -15,6 +15,7 @@ inline float warmup_ip_x0_q(
     size_t padded_dim,
     [[maybe_unused]] size_t _b_query = 0  // not used
 ) {
+#if defined(USE_EXPLICIT_SIMD)
     const size_t num_blk = padded_dim / 64;
     size_t ip_scalar = 0;
     size_t ppc_scalar = 0;
@@ -94,6 +95,43 @@ inline float warmup_ip_x0_q(
     }
 
     return (delta * static_cast<float>(ip_scalar)) + (vl * static_cast<float>(ppc_scalar));
+#else
+    const size_t num_blk = padded_dim / 64;
+        
+    size_t ip_scalar = 0;   // 对应 AVX 中的 ip_vec
+    size_t ppc_scalar = 0;  // 对应 AVX 中的 ppc_vec
+
+    for (size_t i = 0; i < num_blk; ++i) {
+        // 1. 加载当前数据块
+        const uint64_t x = data[i];
+
+        // 2. 累加数据块本身的 Popcount (对应 ppc_vec 逻辑)
+        // GCC/Clang 使用 __builtin_popcountll
+        // MSVC 使用 __popcnt64
+        // C++20 标准使用 std::popcount(x)
+        ppc_scalar += __builtin_popcountll(x);
+
+        // 3. 处理每个 query 分量 (对应 AVX 中的内层 j 循环)
+        for (size_t j = 0; j < b_query; j++) {
+            // 计算 query 的索引：
+            // AVX 中的 gather 索引逻辑是: (i + k) * b_query + j
+            // 这里 i 就是当前块索引，所以直接计算线性偏移
+            size_t query_idx = i * b_query + j;
+            
+            uint64_t q_val = query[query_idx];
+
+            // 计算交集 (AND) 并求 Popcount
+            uint64_t intersection = x & q_val;
+            int popcnt = __builtin_popcountll(intersection);
+
+            // 加权累加 (对应 weighted = popcnt * (1 << j))
+            ip_scalar += static_cast<size_t>(popcnt) << j;
+        }
+    }
+
+    // 4. 最终的线性变换
+    return (delta * static_cast<float>(ip_scalar)) + (vl * static_cast<float>(ppc_scalar));
+#endif
 }
 
 template <uint32_t b_query, uint32_t padded_dim>

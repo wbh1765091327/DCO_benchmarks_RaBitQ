@@ -1,3 +1,6 @@
+#ifndef USE_EXPLICIT_SIMD
+#define USE_EXPLICIT_SIMD = true
+#endif
 #include <cstdint>
 #include <iostream>
 

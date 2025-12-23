@@ -31,6 +31,18 @@ inline void split_batch_estdist(
     float* ip_x0_qr,
     bool use_hacc
 ) {
+    static bool log_printed = false;
+    if (!log_printed) {
+        // 获取LUT的真实内存大小（从实际vector获取）
+        size_t lut_size_bytes = q_obj.lut_size_bytes();  // 一条指令获取真实大小
+        
+        std::cerr << "[IVF-RaBitQ] LUT actual memory size:\n"
+                  << "  - LUT size: " << lut_size_bytes << " bytes ("
+                  << (lut_size_bytes / 1024.0) << " KB)\n"
+                  << "  - Use high accuracy: " << (use_hacc ? "true" : "false") << "\n";
+        
+        log_printed = true;
+    }
     ConstBatchDataMap<float> cur_batch(batch_data, padded_dim);
     RowMajorArray<int32_t> accu_arr(1, fastscan::kBatchSize);
 
